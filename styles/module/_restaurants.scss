@@ -1,0 +1,50 @@
+.restaurants {
+	background-color: $grisClaro;
+	padding: 5rem 0;
+
+	&__heading {
+		text-align: center;
+		color: $secundario;
+	}
+	&__grid {
+		@include grid-layout(2, 1fr);
+		gap: 4rem;
+	}
+}
+
+.retaurant {
+	background-color: $blanco;
+	padding: 4rem;
+	box-shadow: 0px 0px 2.6rem -0.8rem darken($grisClaro, 30%);
+	border-radius: 1rem;
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+	&__grid {
+		display: grid;
+		grid-template-columns: 1fr 3fr;
+		align-items: center;
+		gap: 4rem;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	&__name {
+		margin: 1rem 0;
+		color: $primario;
+		font-size: 2.4rem;
+	}
+
+	&__description {
+		margin: 0.5rem 0;
+		font-size: 1.6rem;
+		color: $secundario;
+		line-height: 1.7;
+	}
+}

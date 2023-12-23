@@ -1,0 +1,44 @@
+.form {
+	&__grid {
+		@include grid-layout(2, 1fr);
+		gap: 5rem;
+	}
+	&__content {
+		background-color: $primario;
+		padding: 5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	&__heading {
+		color: $blanco;
+		text-align: center;
+	}
+	&__label {
+		display: block;
+		text-transform: uppercase;
+		color: $blanco;
+		margin: 1rem 0;
+	}
+	&__input {
+		width: $cien;
+		padding: 1.5rem;
+		border: none;
+	}
+	&__button {
+		margin-top: 2rem;
+		background-color: $secundario;
+		color: $blanco;
+		width: $cien;
+		font-size: 2rem;
+		padding: 1.2rem 3rem;
+		border-radius: 1rem;
+		font-weight: 700;
+		width: $cien;
+		text-align: center;
+		border: none;
+	}
+	&__imagen {
+		width: $cien;
+	}
+}

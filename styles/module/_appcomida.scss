@@ -1,0 +1,37 @@
+.app {
+	padding: 5rem 0;
+
+	&__heading {
+		text-align: center;
+		color: $secundario;
+	}
+
+	&__grid {
+		@include grid-layout(2, 1fr);
+		gap: 5rem;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+
+	&__text {
+		line-height: 1.5;
+		color: $secundario;
+	}
+
+	&__link {
+		background-color: $primario;
+		font-size: 2rem;
+		padding: 1.2rem 3rem;
+		border-radius: 1rem;
+		font-weight: 700;
+		width: auto;
+		text-align: center;
+		color: $blanco;
+		border: none;
+	}
+}

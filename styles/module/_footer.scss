@@ -1,0 +1,46 @@
+.footer {
+	background-color: $secundario;
+	padding-top: 5rem;
+
+	&__grid {
+		@include grid-layout(3, 1fr);
+	}
+
+	&__col {
+		margin-bottom: 5rem;
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	&__heading {
+		color: $blanco;
+		margin: 0;
+	}
+
+	&__nav {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__nav,
+	&__text {
+		margin-top: 2rem;
+	}
+
+	&__link,
+	&__text {
+		font-size: 2rem;
+		line-height: 1.8;
+		color: $blanco;
+		width: 370px;
+	}
+
+	&__copy {
+		background-color: $primario;
+		margin: 0;
+		color: $blanco;
+		text-align: center;
+		padding: 2rem;
+	}
+}
